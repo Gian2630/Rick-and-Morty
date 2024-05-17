@@ -1,0 +1,340 @@
+
+/*Header*/
+.NoFooter{
+  background-image: url("/public/rick_and_morty-2.png");
+  background-size: cover; 
+  background-position: center; 
+  max-width: 100%;
+}
+
+
+.header {
+  display: flex;
+  justify-content:center; 
+  align-items: center; 
+  height: 150px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.navbar-container a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.navbar-container a:hover {
+  color: #ffcc00;
+}
+/*body*/
+body{
+  margin: 0;
+  padding: 0;
+ 
+}
+
+/*Pagina principal*/
+
+h1,h2{
+  color: white;
+}
+
+.Characters-container{
+  display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+}
+
+.Character-box {
+  display:flexbox;
+  width: calc(15% );
+  border: 0px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color:  #1e272f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.Character-box img {
+ 
+  height: auto; 
+  max-width: 100%;
+}
+
+.Character-box h1,h2 {
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.Character-box:hover {
+  transform: translateY(-5px);
+  opacity: 50%;
+}
+
+/*Footer*/
+
+.footer{
+  background-color: #494c54 ;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  max-width: auto;
+  width: 100%;
+  margin: auto;
+  padding: auto;
+}
+
+.Container-footer{
+
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/*Detalles personaje*/
+  .Character-container{
+      align-items: center;
+      justify-content: center ;
+      align-items: center;
+      display: flex; 
+      padding: auto;
+      height: auto;
+      width: 100%;
+      height: 65vh;
+  }
+
+  .Character-info {
+
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 20px;
+    background-color: #1e272f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 500px; 
+}
+
+.Character-image img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.Character-details {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Character-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.Character-details h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+/*Page 404*/
+
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  background-color: black;
+  color: white;
+}
+
+.page-404 img {
+  width: 350px;
+  height: 234px;
+  border-radius: 8PX;
+  -webkit-border-radius: 8PX;
+  -moz-border-radius: 8PX;
+  -ms-border-radius: 8PX;
+  -o-border-radius: 8PX;
+}
+
+.page-404 .empty {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-404 .empty-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.page-404 Button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.page-404 Button:hover {
+  opacity: 70%;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+
+  .header {
+    height: 100px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+  }
+  
+  .navbar-container a {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+
+  .Character-box {
+    width: calc(25% - 20px);
+    margin-bottom: 10px;
+  }
+  
+  .Character-box h1,
+  .Character-box h2 {
+    font-size: 14px;
+  }
+
+
+
+  .Character-info {
+    max-width: 90%;
+  }
+  
+  .Character-image img {
+    max-width: 150px;
+  }
+
+ 
+}
+
+@media only screen and (max-width: 480px) {
+  
+  .header {
+    height: 80px;
+  }
+
+  .NoFooter{
+    background-image: url("/public/rick_and_morty-2.png");
+  background-size:auto; 
+  background-position: center; 
+  
+  }
+  
+  .header h1 {
+    font-size: 20px;
+  }
+
+
+  .Character-box {
+    width: calc(50% - 20px);
+    margin-bottom: 10px;
+  }
+
+
+  .Character-image img {
+    max-width: 120px;
+  }}
+
+  @media only screen and (max-width: 400px) {
+    .header {
+      height: 70px;
+    }
+    
+    .header h1 {
+      font-size: 18px;
+    }
+  
+    .Character-box {
+      width: calc(100% - 20px);
+      margin-bottom: 10px;
+    }
+  
+    .Character-info {
+      margin-top: 50px;
+      max-width: 90%;
+    }
+    
+    .Character-image img {
+      max-width: 100px;
+    }
+
+    .Character-details h1 {
+      font-size: 12px;
+      
+  }
+
+  .Character-details h2 {
+    font-size: 8px;  
+  
+  }
+
+  .page-404 {
+    height: 60vh;
+  }
+  
+  .page-404 img {
+    width: 150px;
+    height: 100px;
+  }
+  
+  .page-404 .empty-title {
+    font-size: 16px;
+  }
+  
+  .page-404 button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+  
